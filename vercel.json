@@ -1,8 +1,24 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "http://3.34.105.135:8000/$1"
+      "source": "/creators/(.*)",
+      "destination": "http://3.34.105.135:8000/creators/$1"
+    },
+    {
+      "source": "/unions/(.*)",
+      "destination": "http://3.34.105.135:8000/unions/$1"
+    },
+    {
+      "source": "/sign/(.*)",
+      "destination": "http://3.34.105.135:8000/sign/$1"
+    },   
+    {
+      "source": "/chatbot/(.*)",
+      "destination": "http://3.34.105.135:8000/chatbot/$1"
+    },
+    {
+      "source": "/nonUserList",
+      "destination": "http://3.34.105.135:8000/nonUserList/$1"
     }
   ]
 }
